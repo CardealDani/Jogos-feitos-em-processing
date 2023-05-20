@@ -1,0 +1,816 @@
+
+void intro() {
+  rectMode(CORNER);
+  fill(255);
+  rect(0, 0, width, height);
+  image(intro, 0, 0, w, h);
+  if (mouseX>=w*0.2666 && mouseX<=w*0.7333 && mouseY>=0.3375*h && mouseY<=0.4625*h)
+    image(BregrasG, 0, 0, w, h);
+  if (mouseX>=w/3.20855 && mouseX<=w/1.43884 && mouseY>=h/2 && mouseY<=h/1.6)
+    image(jogarG, 0, 0, w, h);
+  if (mouseX >=w/2.88461 && mouseX<=w/1.53846 && mouseY>=h/1.37221 && mouseY<=h/1.23456)
+    image(creditosG, 0, 0, w, h);
+}
+void classico() {
+  rectMode(CORNER);
+  image(auxClassico, 0, 0, w, h);
+  image(bombaClassico, 0, b1Y, w, h);
+  image(bombaClassico, w/6.45, b2Y, w, h);
+  image(bombaClassico, w/2.4, b3Y, w, h);
+  image(bombaClassico, w/1.7, b4Y, w, h);
+  image(escudoClassico, eX, eY, w, h);
+  image(naveClassico, 0, 0, w, h);
+  strokeWeight(3);
+  fill(corE, 0, 0, 100);
+  rect(0, h/1.6, w, h/8);
+  stroke(1);
+  textAlign(CORNER);
+  fill(255);
+  textSize(w/25);
+  text("PONTUAÇÃO="+pontos, 0, h/6);
+  text("ESCUDO="+e, 0, h/1.37);
+}
+
+void naruto() {
+  rectMode(CORNER);
+  image(auxNaruto, 0, 0, w, h);
+  image(bombaNaruto, 0, b1Y, w, h);
+  image(bombaNaruto, w/6.45, b2Y, w, h);
+  image(bombaNaruto, w/2.4, b3Y, w, h);
+  image(bombaNaruto, w/1.7, b4Y, w, h);
+  image(escudoNaruto, eX, eY, w, h);
+  strokeWeight(3);
+  fill(corE, 0, 0, 100);
+  rect(0, h/1.6, w, h/8);
+  stroke(1);
+  textAlign(CORNER);
+  fill(255);
+  textSize(w/25);
+  text("PONTUAÇÃO="+pontos, 0, h/6);
+  text("ESCUDO="+e, 0, h/1.37);
+}
+void goku() {
+  rectMode(CORNER);
+  image(auxGoku, 0, 0, w, h);
+  image(bombaGoku, 0, b1Y, w, h);
+  image(bombaGoku, w/6.45, b2Y, w, h);
+  image(bombaGoku, w/2.4, b3Y, w, h);
+  image(bombaGoku, w/1.7, b4Y, w, h);
+  image(escudoGoku, eX, eY, w, h);
+  image(naveGoku, 0, 0, w, h);
+  strokeWeight(3);
+  fill(corE, 0, 0, 100);
+  rect(0, h/1.6, w, h/8);
+  stroke(1);
+  textAlign(CORNER);
+  fill(255);
+  textSize(w/25);
+  text("PONTUAÇÃO="+pontos, 0, h/6);
+  text("ESCUDO="+e, 0, h/1.37);
+}
+void megamen() {
+  rectMode(CORNER);
+  image(auxMegamen, 0, 0, w, h);
+  image(bombaMegamen, 0, b1Y, w, h);
+  image(bombaMegamen, w/6.45, b2Y, w, h);
+  image(bombaMegamen, w/2.4, b3Y, w, h);
+  image(bombaMegamen, w/1.7, b4Y, w, h);
+  image(escudoMegamen, eX, eY, w, h);
+  image(naveMegamen, 0, 0, w, h);
+  strokeWeight(3);
+  fill(corE, 0, 0, 100);
+  rect(0, h/1.6, w, h/8);
+  stroke(1);
+  textAlign(CORNER);
+  fill(255);
+  textSize(w/25);
+  text("PONTUAÇÃO="+pontos, 0, h/6);
+  text("ESCUDO="+e, 0, h/1.37);
+}
+void prova() {
+  colorMode(HSB, 360, 100, 100);
+  background(254, 43, 39);
+  fill(14, 80, 60);
+  triangle(w2, 0.05*h, 0.95*w, 0.075*h, 0.05*w, 0.075*h);
+  rectMode(CORNERS);
+  rect(0.05*w, 0.075*h, 0.95*w, 0.0916*h);
+  arc(w2, 0.091*h, 0.9*w, 0.075*h, radians(0), radians(180));
+  rectMode(CORNER);
+  fill(134, 43, 39);
+  rect(0, 0.925*h, w, h);
+  rect(0, 0.9083*h, 0.125*w, 0.083*h);
+  rect(0.875*w, 0.9083*h, 0.125*w, 0.083*h);
+  rectMode(CENTER);
+  rect(w2, 0.9166*h, 0.125*w, 0.075*h);
+  rect(w2, 0.933*h, 0.2*w, 0.083*h);
+  rect(w2, 0.95*h, 0.2758*w, 0.083*h);
+  rectMode(CORNER);
+  rect(0.0625*w, 0.8583*h, 0.0365*w, h);
+  rect(0.9*w, 0.8583*h, 0.0365*w, h);
+  triangle(0.08*w, 0.833*h, 0.0625*w, 0.8583*h, 0.1*w, 0.8583*h);
+  triangle(0.9175*w, 0.833*h, 0.9375*w, 0.8583*h, 0.9*w, 0.8583*h);
+  stroke(255, 0, 100);
+  noFill();
+  arc(w2, 0.875*h, 0.125*w, 0.05*h, radians(180), radians(360));
+  fill(0);
+  noStroke();
+  ellipse(0.075*w, b1Y, 0.0625*w, 0.041666*h);
+  ellipse(0.3375*w, b2Y, 0.0625*w, 0.041666*h);
+  ellipse(0.66*w, b3Y, 0.0625*w, 0.041666*h);
+  ellipse(0.9375*w, b4Y, 0.0625*w, 0.041666*h);
+  colorMode(RGB);
+  textAlign(CORNER);
+  fill(255);
+  text("PONTUAÇÃO="+pontos, 0, h/6);
+  text("ESCUDO="+e, 0, h/1.37);
+  fill(corE, 0, 0, 100);
+  rect(0, h/1.775, w, h/8);
+  fill(255);
+  textAlign(CENTER);
+  text(auxProva, w2, h2);
+  auxProva2=true;
+}
+float b1Y, b2Y, b3Y, b4Y, eY;
+float eX, j, jE;
+
+int h;
+int w;
+int w2;
+int h2;
+
+//Classico
+PImage classicoG, auxClassico, cidadeClassicoDestruida, cidadeClassico, bombaClassico, escudoClassico, naveClassico, auxClassicoG;
+//
+//Naruto
+PImage narutoG, auxNaruto, bombaNaruto, escudoNaruto, cidadeNarutoDestruida, cidadeNaruto, auxNarutoG;
+//
+//Goku
+PImage gokuG, auxGoku, cidadeGokuDestruida, cidadeGoku, bombaGoku, escudoGoku, naveGoku, auxGokuG;
+//
+//Megamen
+PImage megamenG, auxMegamenG, naveMegamen, escudoMegamen, bombaMegamen, cidadeMegamen, cidadeMegamenDestruida, auxMegamen;
+//
+//prova
+PImage provaG, auxImgPause;
+
+PImage intro, escolha, auxBjogar, regras, BregrasG;
+
+PImage menuPausa, pauseGameOver;
+
+PImage comSom, semSom, jogarG, creditosG, creditos;
+
+
+int pontos;
+int e, n;
+int corE=0;
+boolean start, auxStart2, classico, naruto, megamen, goku, prova, Bprova, Bclassico, Bmegamen, Bgoku, Bnaruto, Bregras, introB, reset, bGa, bCa, bNa, bMa, bPa;
+boolean end, BpauseGameOver, testeSom;
+boolean auxStart ;
+int auxR;
+boolean menuPause, BmenuPause, auxReset, auxProva2, blockEnter, Bescolha, Bcreditos;
+int auxSom;
+String auxProva;
+boolean somTeste(int n) {
+  if (n==2)
+    return true;
+  else return false;
+}
+
+import processing.sound.*;
+SoundFile som, somEscudo, somVidaEscudo, gameOver, somClassico, somNaruto, somGoku, somMegamen,somProva;
+
+void setup() {
+
+size(600,800); //recomendado: 3:4
+  noStroke();
+  h=height;
+  w=width;
+  h2=height/2;
+  w2=width/2;
+  intro=loadImage("telaInicial.png");
+  escolha=loadImage("escolhaTema.png");
+  menuPausa=loadImage("menuPausa.png");
+  pauseGameOver=loadImage("pauseGameOver.png");
+  //
+  jogarG=loadImage("jogarG.png");
+  creditosG=loadImage("creditosG.png");
+  creditos=loadImage("creditos.png");
+  //som
+  comSom=loadImage("som.png");
+  semSom=loadImage("semSom.png");
+  somEscudo=new SoundFile(this, "somEscudo.mp3");
+  somVidaEscudo = new SoundFile(this, "somVidaEscudo.mp3");
+  gameOver= new SoundFile(this, "gameOver.mp3");
+  som=new SoundFile(this, "fundo.mp3");
+  som.amp(0.1);
+  somEscudo.amp(0.1);
+  somVidaEscudo.amp(0.1);
+  som.loop();
+  //
+  //CLASSICO
+  somClassico=new SoundFile(this, "classico.mp3");
+  somClassico.amp(1);
+  classicoG=loadImage("classicoG.png");
+  naveClassico=loadImage("naveClassico.png");
+  bombaClassico=loadImage("bombaClassico.png");
+  escudoClassico=loadImage("escudoClassico.png");
+  cidadeClassico=loadImage("cidadeClassico.png");
+  cidadeClassicoDestruida=loadImage("cidadeClassicoDestruida.png");
+  auxClassico=cidadeClassico;
+  //
+  //NARUTO
+  somNaruto=new SoundFile (this, "naruto.mp3");
+  somNaruto.amp(1);
+  narutoG=loadImage("narutoG.png");
+  cidadeNaruto=loadImage("cidadeNaruto.png");
+  cidadeNarutoDestruida=loadImage("cidadenarutoDestruido.png");
+  bombaNaruto=loadImage("bombaNaruto.png");
+  auxNaruto=cidadeNaruto;
+  escudoNaruto=loadImage("escudoNaruto.png");
+  //
+  //GOKU
+  somGoku=new SoundFile (this, "goku.mp3");
+  somGoku.amp(1);
+  gokuG=loadImage("gokuG.png");
+  naveGoku=loadImage("naveGoku.png");
+  bombaGoku=loadImage("bombaGoku.png");
+  escudoGoku=loadImage("escudoGoku.png");
+  cidadeGoku=loadImage("cidadeGoku.jpg");
+  cidadeGokuDestruida=loadImage("cidadeGokuDestruida.png");
+  auxGoku=cidadeGoku;
+  //
+  //MEGAMEN
+  somMegamen= new SoundFile (this, "megamen.mp3");
+  somMegamen.amp(1);
+  megamenG=loadImage("megamenG.png");
+  naveMegamen=loadImage("naveMegamen.png");
+  bombaMegamen=loadImage("bombaMegamen.png");
+  escudoMegamen=loadImage("escudoMegamen.png");
+  cidadeMegamen=loadImage("cidadeMegamen.png");
+  cidadeMegamenDestruida=loadImage("cidadeMegamenDestruida.png");
+  auxMegamen=cidadeMegamen;
+  //
+  //prova
+  provaG=loadImage("provaG.png");
+  somProva=new SoundFile(this,"somProva.mp3");
+  //
+  BregrasG=loadImage("BregrasG.png");
+  regras=loadImage("regras.png");
+  n=1;
+  pontos=0;
+  e=20;
+  eX=w/2;
+  intro();
+  end=false;
+  auxSom=0;
+}
+
+void draw() {
+  if (somTeste(n))
+    gameOver.play();
+  gameOver.amp(0.2);
+  introB=false;
+  if (auxStart) {
+    if (start) {
+      logica();
+    }
+    if (classico) {
+      classico();
+    } else if (naruto) {
+      naruto();
+    } else if (goku) {
+      goku();
+    } else if (megamen) {
+      megamen();
+    } else if (prova) {
+      prova();
+    }
+  } else {
+    if (auxStart2) {
+      if (Bescolha) {
+        escolha();
+      }
+      if (Bcreditos)
+        creditos();
+      if (Bregras)
+        regras();
+      if (introB) {
+        Bmegamen=true;
+        Bgoku=true;
+        Bclassico=true;
+        Bnaruto=true;
+        Bprova=true;
+        reset=false;
+        BmenuPause=false;
+        bGa=true;
+        bNa=true;
+        bCa=true;
+        bMa=true;
+        bPa=true;
+        Bregras=false;
+        Bcreditos=false;
+        BmenuPause=false;
+        BpauseGameOver=false;
+        blockEnter=true;
+      } else {
+        Bmegamen=false;
+        Bgoku=false;
+        Bclassico=false;
+        Bnaruto=false;
+        Bprova=false;
+        bGa=false;
+        bNa=false;
+        bCa=false;
+        bMa=false;
+        bPa=false;
+      }
+    } else {
+      intro();
+      BmenuPause=false;
+      BpauseGameOver=false;
+      blockEnter=true;
+    }
+  }
+}
+void mousePressed() {
+  if (auxStart2==false) {
+    if (mouseX >=w/2.88461 && mouseX<=w/1.53846 && mouseY>=h/1.37221 && mouseY<=h/1.23456 ) {
+      auxStart2=true;
+      Bcreditos=true;
+    }
+    if (mouseX>=w/3.20855 && mouseX<=w/1.43884 && mouseY>=h/2 && mouseY<=h/1.6 ) {
+      auxStart2=true;
+      Bescolha=true;
+    }
+    if (mouseX>=w/3.20855 && mouseX<=w/1.43884 && mouseY>=h/2.76816 && mouseY<=h/2.15053) {
+      auxStart2=true;
+      Bregras=true;
+    }
+  }
+  if (mouseY>=0 && mouseX<=0.166666*w && mouseY>=0.6875*h && mouseY<=0.8125*h && Bescolha==false && Bregras==false) {
+    resetRegras();
+    Bcreditos=false;
+    introB=false;
+  }
+  if (mouseX>=0 && mouseX<=0.1666*w && mouseY>=0.875*h && mouseY<=h && Bescolha==false && Bcreditos==false ) {
+    resetRegras();
+    Bregras=false;
+    introB=false;
+  }
+
+  if (reset==true && menuPause==true) {
+
+    //home
+    if (mouseX>=w/3.5294 && mouseX<=w/2.0689 && mouseY>=h/2 && mouseY <=h/1.5384) {
+      auxStart=false;
+      auxStart2=false;
+      BmenuPause=false;
+      reset();
+    }
+    //resetar pontuação
+    if (mouseX>=w/1.93548 && mouseX<=w/1.39534 && mouseY>=h/2 && mouseY <=h/1.5384) {
+      reset();
+      antiReset();
+    }
+
+    //som  
+    if (mouseX<=w/5.94059 && mouseY>=h/1.40350 && mouseY<=h/1.19225 && menuPause==true || mouseX<=w/5.94059 && mouseY>=h/1.40350 && mouseY<=h/1.19225 && BpauseGameOver==true) {
+      if (mouseButton==LEFT) {
+        auxSom++;
+      }
+      if (auxSom%2==0) {
+        som.play();
+        image(comSom, 0, 0, w, h);
+      } else {
+        som.stop();
+        image(semSom, 0, 0, w, h);
+      }
+    }
+  }
+  if (Bclassico) {
+    if (mouseX>=w/3.076 && mouseX<=(w/3.076)+(w/6) && mouseY>=h/1.85614 && mouseY<=(h/1.85614)+(h/8)) {
+      somClassico.play();
+      start=true;
+      auxStart=true;
+      classico=true;
+      megamen=false;
+      goku=false;
+      naruto=false;
+      Bmegamen=false;
+      prova=false;
+      Bprova=false;
+      Bgoku=false;
+      Bnaruto=false;
+      reset=true;
+      BmenuPause=true;
+      bGa=false;
+      bNa=false;
+      bCa=true;
+      bMa=false;
+      bPa=false;
+      Bclassico=false;
+      Bregras=false;
+      Bcreditos=false;
+      blockEnter=false;
+      Bescolha=false;
+    }
+  }
+
+
+  if (Bnaruto) {
+
+    if (mouseX>=w/1.967 && mouseX<=(w/1.967)+(w/6) && mouseY>=h/1.85614 && mouseY<=(h/1.85614)+(h/8)) {
+      somNaruto.play();
+      start=true;
+      auxStart=true;
+      classico=false;
+      naruto=true;
+      megamen=false;
+      goku=false;
+      Bmegamen=false;
+      Bgoku=false;
+      Bclassico=false;
+      reset=true;
+      BmenuPause=true;
+      prova=false;
+      Bprova=false;
+      bNa=true;
+      bGa=false;
+      bCa=false;
+      bMa=false;
+      bPa=false;
+      Bnaruto=false;
+      Bregras=false;
+      Bcreditos=false;
+      blockEnter=false;
+      Bescolha=false;
+    }
+  }
+  //goku
+  if (Bgoku) {
+
+    if (mouseX>=w/4.285 && mouseX<=(w/4.285)+(w/6) && mouseY>=h/1.47874 && mouseY<=(h/1.478743)+(h/8)) {
+      somGoku.play();
+      start=true;
+      auxStart=true;
+      goku=true;
+      megamen=false;
+      classico=false;
+      naruto=false;
+      Bmegamen=false;
+      Bclassico=false;
+      Bnaruto=false;
+      reset=true;
+      BmenuPause=true;
+      prova=false;
+      Bprova=false;
+      bGa=true;
+      bNa=false;
+      bCa=false;
+      bMa=false;
+      bPa=false;
+      Bgoku=false;
+      Bregras=false;
+      Bcreditos=false;
+      blockEnter=false;
+      Bescolha=false;
+    }
+  }
+  //megamen
+  if (Bmegamen) {
+    if (mouseX>=w/2.4 && mouseX<=(w/2.4)+(w/6) && mouseY>=h/1.47874 && mouseY<=(h/1.478743)+(h/8)) {
+      somMegamen.play();
+      start=true;
+      auxStart=true;
+      megamen=true;
+      goku=false;
+      classico=false;
+      naruto=false;
+      prova=false;
+      Bprova=false;
+      Bclassico=false;
+      Bnaruto=false;
+      Bgoku=false;
+      reset=true;
+      BmenuPause=true;
+      bGa=false;
+      bNa=false;
+      bCa=false;
+      bMa=true;
+      bPa=false;
+      Bmegamen=false;
+      Bregras=false;
+      Bcreditos=false;
+      blockEnter=false;
+      Bescolha=false;
+    }
+  }
+  if (bPa) {
+    if (prova) {
+      blockEnter=false;
+      if (auxProva2) {
+        if (!(mouseY>=h/1.775 && mouseY<=h/1.403)) {
+          e+=3;
+        } else {
+          e--;
+        }
+      }
+      if (mouseY>=h/1.775 && mouseY<=h/1.403) {
+        if (b1Y>=h/1.775 && b1Y<=h/1.403) {
+          b1Y=0;
+          pontos++;
+        }
+
+        if (b2Y>=h/1.775 && b2Y<=h/1.403) {
+          b2Y=0;
+          pontos++;
+        }
+        if ( b3Y>=h/1.775 && b3Y<=h/1.403) {
+          b3Y=0;
+          pontos++;
+        }
+        if (b4Y>=h/1.775 && b4Y<=h/1.403) {
+          b4Y=0;
+          pontos++;
+        }
+      }
+      if (e<=0) {
+        b1Y=h;
+        b2Y=h;
+        b3Y=h;
+        b4Y=h;
+        eY=h;
+        e++;
+        end=true;
+      }
+    }
+  }
+  //prova
+  if (Bprova) {
+    if (mouseX>=w/1.6666 && mouseX<=w/1.3043 && mouseY>=h/1.47874 && mouseY<=(h/1.47874)+(h/8)) {
+      somProva.play();
+      start=true;
+      auxStart=true;
+      megamen=false;
+      goku=false;
+      classico=false;
+      naruto=false;
+      Bnaruto=false;
+      Bgoku=false;
+      Bclassico=false;
+      Bprova=false;
+      prova=true;
+      reset=true;
+      BmenuPause=true;
+      bGa=false;
+      bNa=false;
+      bCa=false;
+      bMa=false;
+      bPa=true;
+      Bmegamen=false;
+      Bregras=false;
+      Bcreditos=false;
+      blockEnter=false;
+      Bescolha=false;
+    }
+  }
+}
+void keyPressed() {
+  logicaBotoes();
+  if (keyCode==32 && BmenuPause==true || BpauseGameOver==true) {//espaço pausa
+    menuPause=!(menuPause);
+    if (menuPause) {
+      start=false;
+      blockEnter=true;
+      if (bGa) {
+        goku=false;
+      } else if (bCa) {
+        classico=false;
+      } else if (bMa) {
+        megamen=false;
+      } else if (bNa) {
+        naruto=false;
+      } else if (bPa) {
+        prova=false;
+      }
+      menuPausa();
+    } else {
+      blockEnter=false;
+      antiReset();
+    }
+  }
+}
+void menuPausa() {
+  menuPause=true;
+  if (BpauseGameOver) {
+    auxImgPause=pauseGameOver;
+  } else {
+    auxImgPause=menuPausa;
+  }
+
+  image(auxImgPause, 0, 0, w, h);
+  auxProva2=false;
+}
+void logicaBotoes() {
+  if (keyCode==ENTER && blockEnter==false) {
+    start=true;
+    somEscudo.play();
+    e--;
+    if (e<=15) {
+      corE=100;
+    }
+    if (e<=10) {
+      corE=150;
+    }
+    if (e<=5) {
+      corE=200;
+    }
+    if (e<=2) {
+      corE=255;
+    }
+    if (e<=0) {
+      b1Y=h;
+      b2Y=h;
+      b3Y=h;
+      b4Y=h;
+      eY=h;
+      e++;
+      end=true;
+    }
+    if (b1Y>=h/1.775 && b1Y<=h/1.403) {
+      b1Y=0;
+      pontos++;
+    }
+
+    if (b2Y>=h/1.775 && b2Y<=h/1.403) {
+      b2Y=0;
+      pontos++;
+    }
+    if ( b3Y>=h/1.775 && b3Y<=h/1.403) {
+      b3Y=0;
+      pontos++;
+    }
+    if (b4Y>=h/1.775 && b4Y<=h/1.403) {
+      b4Y=0;
+      pontos++;
+    }
+    if (bPa==false) {
+      if (eY>=h/1.775 && eY<=h/1.403) {
+        eY=0;
+        e+=10;
+        corE=0;
+        somVidaEscudo.play();
+      }
+    }
+  }
+  if (pontos>=30) {//dificuldade do jogo
+    j+=0.04;
+    jE+=0.02;
+  }
+}
+void logica() {
+  b1Y+=(random(0, h/100))+j;
+  b2Y+=(random(0, h/133.33))+j;
+  b3Y+=(random(0, h/88.88))+j;
+  b4Y+=(random(0, h/114.28))+j;
+  eY+=(random(0, h/400))+jE;
+
+  if (b1Y>=h) {
+    b2Y=h;
+    b3Y=h;
+    b4Y=h;
+    eY=h;
+    e=0;
+    end=true;
+  }
+  if (b2Y>=h) {
+    b2Y=h;
+    b3Y=h;
+    b4Y=h;
+    eY=h;
+    e=0;
+    end=true;
+  }
+  if (b3Y>=h) {
+    b1Y=h;
+    b2Y=h;
+    b4Y=h;
+    eY=h;
+    e=0;
+    end=true;
+  }
+  if (b4Y>=h) {
+    b1Y=h;
+    b2Y=h;
+    b3Y=h;
+    eY=h;
+    e=0;
+    end=true;
+  }
+
+  if (end) {
+    if (bCa)
+      auxClassico=cidadeClassicoDestruida;
+    else if (bGa)
+      auxGoku=cidadeGokuDestruida;
+    else if (bMa)
+      auxMegamen=cidadeMegamenDestruida;
+    else if (bNa)
+      auxNaruto=cidadeNarutoDestruida;
+    else if (bPa)
+      auxProva="BOOOOOOoooooOOOOoooMMmmmmm";
+    BpauseGameOver=true;
+    n++;
+  } else {
+    auxClassico=cidadeClassico;
+    auxGoku=cidadeGoku;
+    auxMegamen=cidadeMegamen;
+    auxNaruto=cidadeNaruto;
+    auxProva="";
+    BpauseGameOver=false;
+  }
+}
+
+void reset() {
+  menuPause=false;
+  b1Y= 0;
+  b2Y= 0;
+  b3Y= 0;
+  b4Y= 0;
+  eY = 0;
+  e=20;
+  j=0;
+  jE=0;
+  corE=100;
+  end=false;
+  pontos=0;
+  blockEnter=false;
+  n=1;
+  Bescolha=false;
+}
+void antiReset() {
+  if (bGa) {
+    goku=true;
+  } else if (bCa) {
+    classico=true;
+  } else if (bMa) {
+    megamen=true;
+  } else if (bNa) {
+    naruto=true;
+  } else if (bPa) {
+    prova=true;
+  }
+  start=true;
+}
+void regras() {
+  auxStart2=true;
+  image(regras, 0, 0, w, h);
+  Bmegamen=false;
+  Bgoku=false;
+  Bclassico=false;
+  Bnaruto=false;
+  Bprova=false;
+  bGa=false;
+  bNa=false;
+  bCa=false;
+  bMa=false;
+  bPa=false;
+  Bescolha=false;
+  Bcreditos=false;
+}
+void resetRegras() {
+  auxStart2=false;
+}
+
+void creditos() {
+  auxStart2=true;
+  image(creditos, 0, 0, w, h);
+  Bmegamen=false;
+  Bgoku=false;
+  Bclassico=false;
+  Bnaruto=false;
+  Bprova=false;
+  bGa=false;
+  bNa=false;
+  bCa=false;
+  bMa=false;
+  bPa=false;
+  Bescolha=false;
+  Bregras=false;
+}
+void escolha() {
+  //classico
+  image(escolha, 0, 0, w, h);
+  if (mouseX>=w/3.076 && mouseX<=(w/3.076)+(w/6) && mouseY>=h/1.85614 && mouseY<=(h/1.85614)+(h/8)) {
+    image(classicoG, 0, 0, w, h);
+  } else if (mouseX>=w/1.967 && mouseX<=(w/1.967)+(w/6) && mouseY>=h/1.85614 && mouseY<=(h/1.85614)+(h/8)) {
+    image(narutoG, 0, 0, w, h);
+  } else  if (mouseX>=w/4.285 && mouseX<=(w/4.285)+(w/6) && mouseY>=h/1.47874 && mouseY<=(h/1.478743)+(h/8)) {
+    image(gokuG, 0, 0, w, h);
+  } else  if (mouseX>=w/2.4 && mouseX<=(w/2.4)+(w/6) && mouseY>=h/1.47874 && mouseY<=(h/1.47874)+(h/8)) {
+    image(megamenG, 0, 0, w, h);
+  } else  if (mouseX>=w/1.6666 && mouseX<=w/1.3043 && mouseY>=h/1.47874 && mouseY<=(h/1.47874)+(h/8)) {
+    image(provaG, 0, 0, w, h);
+  }
+  introB=true;
+}
